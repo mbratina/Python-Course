@@ -1,0 +1,32 @@
+
+http://jedelman.com/home/netconf-restconf-on-ios-xe/
+
+
+ssh -p 830 admin@192.168.10.80 -s netconf
+
+redirect to a file if you want to
+ssh -p 830 admin@192.168.10.80 -s netconf > filename.txt
+
+<<login when prompted for a password>>
+
+<<router responds with all its capabilities>>
+
+<<paste this to the router, lets the router know hwo to communicate with terminal session>>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <capabilities>
+        <capability>urn:ietf:params:netconf:base:1.0</capability>
+    </capabilities>
+</hello>]]>]]>
+
+<<paste this to get the whole xml config of the router>>
+
+<?xml version="1.0"?>
+<nc:rpc message-id="101" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <nc:get>
+    </nc:get>
+</nc:rpc>
+]]>]]>
+
+
