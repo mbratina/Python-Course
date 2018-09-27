@@ -1,0 +1,11 @@
+sudo apt-get install python-demjson
+jsonlint-py -f myjsonfile
+      (replace myjsonfile with your filename)
+
+
+sudo apt-get install npm     (optional)
+
+Installs in Linux – java script command line tools:	 
+sudo apt-get install nodejs
+sudo npm install –g jsonlint-cli
+sudo ln -s /usr/bin/nodejs /usr/bin/nodecode is for json lint in linux
